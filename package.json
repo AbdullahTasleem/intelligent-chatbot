@@ -1,0 +1,16 @@
+{
+  "name": "dna-intelligent-chatbot-app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "4.15.x",
+    "promise": "^8.0.2",
+    "watson-developer-cloud": "^3.9.1"
+  },
+  "repository": {}
+}

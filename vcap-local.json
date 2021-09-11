@@ -1,0 +1,22 @@
+{
+  "dev": {
+    "tone_analyzer": [
+      {
+        "credentials": {
+          "url": "https://gateway.watsonplatform.net/tone-analyzer/api",
+          "username": "6d6a47a6-c196-46ff-a03c-3e170656a6b3",
+          "password": "aGmMIChLAPIl"
+        }
+      }
+    ],
+    "conversation": [
+      {
+        "credentials": {
+          "url": "https://gateway.watsonplatform.net/assistant/api",
+          "username": "46d4f473-c637-4011-a1b0-0436cd36afb4",
+          "password": "5lkIjDIi0376"
+        }
+      }
+    ]
+  }
+}

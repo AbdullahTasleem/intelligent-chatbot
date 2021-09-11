@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <base href="/">
+  <title>IBM Digital - Nation Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:image" content="conversation.svg" />
+  <meta property="og:title" content="Conversation Chat Simple" />
+  <meta property="og:description" content="Sample application that shows how to use the Watson Assistant API to identify user intents"
+  />
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <!--floating button styles-->
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/floating.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link rel=" stylesheet " href="css/app.css " rel="stylesheet">
+</head>
+
+<body>
+  <div>
+    <h1>IBM Digital - Nation Chatbot</h1>
+    <p>This is a chatbot test!</p>
+    <div class="floating-chat">
+      <!-- <i class="fa fa-3x fa-comments" aria-hidden="true"></i> -->
+      <i class="chat-button"></i>
+      <div class="chat">
+        <div class="header">
+          <span class="title">
+            <i class="chatbot-icon"></i>
+            IBM Digital - Nation Chatbot
+            <p>
+              <span class="dot available"></span>Available Now
+            </p>
+          </span>
+
+          <div class="tooltip">
+            <button class="reset">
+              <i class="material-icons">
+                refresh
+              </i>
+            </button>
+            <span class="tooltiptext">Reset</span>
+          </div>
+          <div class="tooltip">
+            <button class="close">
+              <!-- <i class="fal fa-2x fa-times" aria-hidden="true"></i> -->
+              <i class="material-icons">
+                close
+              </i>
+            </button>
+            <span class="tooltiptext">Close</span>
+          </div>
+        </div>
+        <div id="chat-column-holder" class="responsive-column content-column" hide>
+          <div class="chat-column">
+            <div id="scrollingChat"></div>
+            <div class="input-container">
+              <label for="textInput" class="inputOutline">
+                <input id="textInput" class="input responsive-column" placeholder="Type something..." type="text" onkeyup="ConversationPanel.checkSubmitBtn(this)"
+                  onkeydown="ConversationPanel.inputKeyDown(event, this)" autofocus>
+              </label>
+              <input type="button" class="submit-msg" disabled value="Send" onclick="ConversationPanel.submitInput(event, 'textInput')"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--div id="contentParent" class="responsive-columns-wrapper">
+
+    <div id="chat-column-holder" class="responsive-column content-column" hide>
+      <div class="chat-column">
+        <div id="scrollingChat"></div>
+        <label for="textInput" class="inputOutline">
+          <input id="textInput" class="input responsive-column" placeholder="Type something" type="text" onkeydown="ConversationPanel.inputKeyDown(event, this)"
+            autofocus>
+        </label>
+      </div>
+    </div>
+    <div id="payload-column" class="fixed-column content-column">
+      <div id="payload-initial-message">
+        Type something to see the output
+      </div>
+      <div id="payload-request" class="payload"></div>
+      <div id="payload-response" class="payload"></div>
+    </div-->
+  </div>
+
+  <!-- JQuery for floating button-->
+  <script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
+  <!-- floating button javascript-->
+  <script src="js/floating.js"></script>
+
+  <script src="js/common.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/conversation.js"></script>
+  <!--script src="js/payload.js"></script-->
+  <script src="js/global.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/watson-developer-cloud/watson-developer-cloud.github.io/master/analytics.js"></script>
+</body>
+
+</html>
